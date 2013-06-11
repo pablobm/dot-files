@@ -87,3 +87,8 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 " Show line numbers
 set nu
 
+" Indent with 2 spaces
+set smartindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
