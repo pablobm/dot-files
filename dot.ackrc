@@ -1,1 +1,2 @@
---type-set coffee=.coffee
+--type-set
+coffee=.coffee
