@@ -16,7 +16,8 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'mileszs/ack.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'scrooloose/nerdtree'
-
+Bundle 'tpope/vim-markdown'
+Bundle 'suan/vim-instant-markdown'
 filetype plugin indent on
 
 
