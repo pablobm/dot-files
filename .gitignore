@@ -1,3 +1,4 @@
-dot.vim/bundle
+dot.vim/bundle/*
+!dot.vim/bundle/.gitignore
 .DS_Store
 *.swp
