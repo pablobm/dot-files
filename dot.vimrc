@@ -18,6 +18,8 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-markdown'
 Bundle 'suan/vim-instant-markdown'
+Bundle 'tpope/vim-bundler'
+Bundle 'tpope/vim-rails'
 filetype plugin indent on
 
 
