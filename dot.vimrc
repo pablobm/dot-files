@@ -20,6 +20,7 @@ Bundle 'tpope/vim-markdown'
 Bundle 'suan/vim-instant-markdown'
 Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-rails'
+Bundle 'scrooloose/syntastic'
 filetype plugin indent on
 
 
