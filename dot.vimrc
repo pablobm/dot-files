@@ -95,3 +95,9 @@ set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
+
+" Incremental search
+set incsearch
+
+" gitx shortcut
+:nmap <Leader>gx :!gitx<CR><CR>
