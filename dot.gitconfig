@@ -3,10 +3,6 @@
   editor = vim
   excludesfile = ~/.git.global_ignores
 
-[user]
-  name = Pablo Brasero
-  email = pablo@new-bamboo.co.uk
-
 [color]
   diff = auto
   status = auto
@@ -14,3 +10,7 @@
 
 [push]
   default = simple
+
+[include]
+  path = ~/.git.local
+
