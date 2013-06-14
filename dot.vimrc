@@ -21,6 +21,7 @@ Bundle 'suan/vim-instant-markdown'
 Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-rails'
 Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/nerdcommenter'
 filetype plugin indent on
 
 
