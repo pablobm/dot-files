@@ -102,3 +102,6 @@ set incsearch
 
 " gitx shortcut
 :nmap <Leader>gx :!gitx<CR><CR>
+
+" Autocomplete with TAB (tab with Shift+TAB)
+:imap <Tab> <C-n>
