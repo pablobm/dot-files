@@ -22,6 +22,7 @@ Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-rails'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdcommenter'
+Bundle 'juvenn/mustache.vim'
 filetype plugin indent on
 
 
