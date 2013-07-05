@@ -9,7 +9,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
 
-Bundle 'altercation/vim-colors-solarized'
+Bundle 'nanotech/jellybeans.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-powerline'
@@ -23,16 +23,14 @@ Bundle 'tpope/vim-rails'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'juvenn/mustache.vim'
+Bundle 'thoughtbot/vim-rspec'
 filetype plugin indent on
 
 
 "
-" Solarized
+" Powerline
 "
-syntax enable
-set background=dark
-colorscheme solarized
-
+set laststatus=2   " Always show the statusline
 
 "
 " CtrlP
@@ -43,11 +41,6 @@ let g:ctrlp_custom_ignore = {
   \ 'link': 'some_bad_symbolic_links',
   \ }
 " Additionally, it will also ignore files listed in `wildignore`
-
-"
-" Powerline
-"
-set laststatus=2   " Always show the statusline
 
 "
 " ack.vim
@@ -74,6 +67,9 @@ let g:ackprg="ack -H --nocolor --column --ignore-dir=node_modules"
 "
 " Misc
 "
+
+syntax enable
+colorscheme jellybeans
 
 " Remove trailing spaces
 autocmd BufWritePre * :%s/\s\+$//e
