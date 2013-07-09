@@ -13,7 +13,7 @@ Bundle 'nanotech/jellybeans.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-powerline'
-Bundle 'mileszs/ack.vim'
+Bundle 'pablobm/ack.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-markdown'
@@ -45,7 +45,7 @@ let g:ctrlp_custom_ignore = {
 "
 " ack.vim
 "
-let g:ackprg="ack -H --nocolor --column --ignore-dir=node_modules"
+let g:ackargs="-H --nocolor --column --ignore-dir=node_modules"
 
 "
 " vim-coffee-script
