@@ -71,6 +71,9 @@ let g:ackargs="-H --nocolor --column --ignore-dir=node_modules"
 syntax enable
 colorscheme jellybeans
 
+" Allow backspace at start of insert http://blog.sanctum.geek.nz/vim-annoyances/
+set backspace=indent,eol,start
+
 " Remove trailing spaces
 autocmd BufWritePre * :%s/\s\+$//e
 
