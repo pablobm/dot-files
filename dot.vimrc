@@ -57,6 +57,7 @@ let g:ackargs="-H --nocolor --column --ignore-dir=node_modules"
 " NERDTree
 "
 :nmap <Leader>t :NERDTreeToggle<CR>
+:nmap <Leader>T :NERDTreeFind<CR>
 
 "
 " fugitive.vim
