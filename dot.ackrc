@@ -2,5 +2,7 @@
 coffee=.coffee
 --type-set
 scss=.scss
+--type-set
+haml=.haml
 --ignore-dir
 .bundle
