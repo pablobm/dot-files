@@ -2,6 +2,11 @@ set nocompatible
 set encoding=utf-8
 
 "
+" Things that need to come before
+"
+let g:instant_markdown_slow = 1
+
+"
 " Configuration for Vundle
 "
 filetype off
