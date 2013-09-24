@@ -4,5 +4,7 @@ coffee=.coffee
 scss=.scss
 --type-set
 haml=.haml
+--type-set
+erb=.erb
 --ignore-dir
 .bundle
