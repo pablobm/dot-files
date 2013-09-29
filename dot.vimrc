@@ -29,6 +29,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'juvenn/mustache.vim'
 Bundle 'thoughtbot/vim-rspec'
+Bundle 'cakebaker/scss-syntax.vim'
 filetype plugin indent on
 
 
