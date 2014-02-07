@@ -74,7 +74,6 @@ let g:ackargs="-H --nocolor --column --ignore-dir=node_modules"
 " NERDCommenter
 "
 map <leader>/ <plug>NERDCommenterToggle<CR>
-imap <leader>/ <Esc><plug>NERDCommenterToggle<CR>i
 
 
 "
