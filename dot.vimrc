@@ -75,6 +75,15 @@ let g:ackargs="-H --nocolor --column --ignore-dir=node_modules"
 "
 map <leader>/ <plug>NERDCommenterToggle<CR>
 
+"
+" RSpec.vim
+"
+
+map <Leader>r :call RunCurrentSpecFile()<CR>
+map <Leader>R :call RunNearestSpec()<CR>
+"map <Leader>l :call RunLastSpec()<CR>
+"map <Leader>a :call RunAllSpecs()<CR>
+
 
 "
 " Misc
