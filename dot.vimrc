@@ -85,6 +85,14 @@ map <Leader>R :call RunNearestSpec()<CR>
 "map <Leader>l :call RunLastSpec()<CR>
 "map <Leader>a :call RunAllSpecs()<CR>
 
+"
+" Syntastic
+"
+
+" AngularJS, Mozilla Building Blocks, Mozilla Brick
+let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-", "proprietary attribute", "<x-", "</x-"]
+
+
 
 "
 " Misc
