@@ -30,6 +30,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'juvenn/mustache.vim'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'cakebaker/scss-syntax.vim'
+Bundle 'vim-scripts/spacehi.vim'
 filetype plugin indent on
 
 
