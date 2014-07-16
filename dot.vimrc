@@ -130,6 +130,13 @@ set expandtab
 " Incremental search
 set incsearch
 
+" Be smart about case sensitiveness
+set smartcase
+"/copyright      " Case insensitive
+"/Copyright      " Case sensitive
+"/copyright\C    " Case sensitive
+"/Copyright\c    " Case insensitive
+
 " gitx shortcut
 :nmap <Leader>gx :!gitx<CR><CR>
 
