@@ -10,27 +10,28 @@ let g:instant_markdown_slow = 1
 " Configuration for Vundle
 "
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
+Plugin 'gmarik/vundle'
 
-Bundle 'nanotech/jellybeans.vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'pablobm/ack.vim'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-markdown'
-Bundle 'suan/vim-instant-markdown'
-Bundle 'tpope/vim-bundler'
-Bundle 'tpope/vim-rails'
-Bundle 'scrooloose/syntastic'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'juvenn/mustache.vim'
-Bundle 'thoughtbot/vim-rspec'
-Bundle 'cakebaker/scss-syntax.vim'
-Bundle 'vim-scripts/spacehi.vim'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'pablobm/ack.vim'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-markdown'
+Plugin 'suan/vim-instant-markdown'
+Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-rails'
+Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'juvenn/mustache.vim'
+Plugin 'thoughtbot/vim-rspec'
+Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'vim-scripts/spacehi.vim'
+call vundle#end()
 filetype plugin indent on
 
 
