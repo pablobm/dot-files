@@ -143,3 +143,6 @@ set smartcase
 
 " Autocomplete with TAB (tab with Shift+TAB)
 :imap <Tab> <C-n>
+
+" MacVim
+set guifont=Inconsolata:h16
