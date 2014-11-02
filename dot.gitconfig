@@ -1,3 +1,7 @@
+[user]
+  name = Pablo Brasero
+  email = pablo@pablobm.com
+
 [core]
   pager = cat
   editor = vim
