@@ -6,5 +6,8 @@ scss=.scss
 haml=.haml
 --type-set
 erb=.erb
+--type-set
+mustache=.mustache
 --ignore-dir
 .bundle
+
