@@ -6,6 +6,7 @@
   pager = cat
   editor = vim
   excludesfile = ~/.git.global_ignores
+  trustctime = false # See http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/
 
 [color]
   diff = auto
@@ -19,3 +20,5 @@
 [include]
   path = ~/.git.local
 
+[alias]
+	co = checkout

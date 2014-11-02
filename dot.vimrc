@@ -10,26 +10,28 @@ let g:instant_markdown_slow = 1
 " Configuration for Vundle
 "
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
+Plugin 'gmarik/vundle'
 
-Bundle 'nanotech/jellybeans.vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'pablobm/ack.vim'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-markdown'
-Bundle 'suan/vim-instant-markdown'
-Bundle 'tpope/vim-bundler'
-Bundle 'tpope/vim-rails'
-Bundle 'scrooloose/syntastic'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'juvenn/mustache.vim'
-Bundle 'thoughtbot/vim-rspec'
-Bundle 'cakebaker/scss-syntax.vim'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'pablobm/ack.vim'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-markdown'
+Plugin 'suan/vim-instant-markdown'
+Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-rails'
+Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'juvenn/mustache.vim'
+Plugin 'thoughtbot/vim-rspec'
+Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'vim-scripts/spacehi.vim'
+call vundle#end()
 filetype plugin indent on
 
 
@@ -74,7 +76,23 @@ let g:ackargs="-H --nocolor --column --ignore-dir=node_modules"
 " NERDCommenter
 "
 map <leader>/ <plug>NERDCommenterToggle<CR>
-imap <leader>/ <Esc><plug>NERDCommenterToggle<CR>i
+
+"
+" RSpec.vim
+"
+
+map <Leader>r :call RunCurrentSpecFile()<CR>
+map <Leader>R :call RunNearestSpec()<CR>
+"map <Leader>l :call RunLastSpec()<CR>
+"map <Leader>a :call RunAllSpecs()<CR>
+
+"
+" Syntastic
+"
+
+" AngularJS, Mozilla Building Blocks, Mozilla Brick
+let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-", "proprietary attribute", "<x-", "</x-"]
+
 
 
 "
@@ -113,8 +131,21 @@ set expandtab
 " Incremental search
 set incsearch
 
+" Be smart about case sensitiveness
+set smartcase
+"/copyright      " Case insensitive
+"/Copyright      " Case sensitive
+"/copyright\C    " Case sensitive
+"/Copyright\c    " Case insensitive
+
 " gitx shortcut
 :nmap <Leader>gx :!gitx<CR><CR>
 
 " Autocomplete with TAB (tab with Shift+TAB)
 :imap <Tab> <C-n>
+
+" Treat JST templates as HTML
+au BufNewFile,BufRead *.jst* set filetype=html
+
+" MacVim
+set guifont=Inconsolata:h16
