@@ -12,7 +12,7 @@ let g:instant_markdown_slow = 1
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
-Plugin 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'kien/ctrlp.vim'
