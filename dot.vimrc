@@ -148,5 +148,8 @@ set smartcase
 " Treat JST templates as HTML
 au BufNewFile,BufRead *.jst* set filetype=html
 
+" diff
+set diffopt=filler,vertical
+
 " MacVim
 set guifont=Inconsolata:h16
