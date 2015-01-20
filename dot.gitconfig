@@ -16,4 +16,4 @@
   path = ~/.git.local
 
 [alias]
-	co = checkout
+  co = checkout
