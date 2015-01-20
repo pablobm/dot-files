@@ -148,4 +148,4 @@ set smartcase
 au BufNewFile,BufRead *.jst* set filetype=html
 
 " MacVim
-set guifont=Inconsolata:h16
+set guifont=Inconsolata\ for\ Powerline:h16
