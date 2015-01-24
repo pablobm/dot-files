@@ -30,6 +30,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'juvenn/mustache.vim'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'wting/rust.vim'
 
 call vundle#end()
 filetype plugin indent on
