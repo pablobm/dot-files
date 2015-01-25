@@ -15,3 +15,5 @@
 [include]
   path = ~/.git.local
 
+[alias]
+  co = checkout

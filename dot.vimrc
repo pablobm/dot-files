@@ -10,7 +10,7 @@ let g:instant_markdown_slow = 1
 " Configuration for Vundle
 "
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 Plugin 'gmarik/vundle'
 
@@ -31,6 +31,7 @@ Plugin 'juvenn/mustache.vim'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'wting/rust.vim'
+Plugin 'vim-scripts/spacehi.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -87,6 +88,14 @@ map <Leader>R :call RunNearestSpec()<CR>
 "map <Leader>l :call RunLastSpec()<CR>
 "map <Leader>a :call RunAllSpecs()<CR>
 
+"
+" Syntastic
+"
+
+" AngularJS, Mozilla Building Blocks, Mozilla Brick
+let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-", "proprietary attribute", "<x-", "</x-"]
+
+
 
 "
 " Misc
@@ -136,3 +145,9 @@ set smartcase
 
 " Autocomplete with TAB (tab with Shift+TAB)
 :imap <Tab> <C-n>
+
+" Treat JST templates as HTML
+au BufNewFile,BufRead *.jst* set filetype=html
+
+" MacVim
+set guifont=Inconsolata\ for\ Powerline:h16
