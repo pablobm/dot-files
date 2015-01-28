@@ -21,6 +21,7 @@ Plugin 'Lokaltog/vim-powerline'
 Plugin 'pablobm/ack.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'scrooloose/nerdtree'
+Plugin 'godlygeek/tabular' " Required by tpope/vim-markdown
 Plugin 'tpope/vim-markdown'
 Plugin 'suan/vim-instant-markdown'
 Plugin 'tpope/vim-bundler'
