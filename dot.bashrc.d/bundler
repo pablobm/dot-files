@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+alias be='bundle exec'
+alias bespec='bundle exec rspec'
+export BUNDLER_EDITOR=subl
