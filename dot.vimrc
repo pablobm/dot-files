@@ -21,6 +21,7 @@ Plugin 'Lokaltog/vim-powerline'
 Plugin 'pablobm/ack.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'scrooloose/nerdtree'
+Plugin 'godlygeek/tabular' " Required by tpope/vim-markdown
 Plugin 'tpope/vim-markdown'
 Plugin 'suan/vim-instant-markdown'
 Plugin 'tpope/vim-bundler'
@@ -30,8 +31,9 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'juvenn/mustache.vim'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'cakebaker/scss-syntax.vim'
-Plugin 'vim-scripts/spacehi.vim'
 Plugin 'wting/rust.vim'
+Plugin 'vim-scripts/spacehi.vim'
+
 call vundle#end()
 filetype plugin indent on
 
@@ -152,4 +154,4 @@ au BufNewFile,BufRead *.jst* set filetype=html
 set diffopt=filler,vertical
 
 " MacVim
-set guifont=Inconsolata:h16
+set guifont=Inconsolata\ for\ Powerline:h16
