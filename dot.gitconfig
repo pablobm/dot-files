@@ -14,8 +14,7 @@
   branch = auto
 
 [push]
-  # Not understood by Git 1.7
-  #default = simple
+  default = current
 
 [include]
   path = ~/.git.local
