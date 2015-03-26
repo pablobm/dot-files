@@ -2,3 +2,4 @@ dot.vim/bundle/*
 !dot.vim/bundle/vundle
 .DS_Store
 *.swp
+Sublime\ Text\ 3/Packages/User/Package\ Control*
