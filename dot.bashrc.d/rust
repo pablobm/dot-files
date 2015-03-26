@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+RUST_PREFIX=$HOME/.rust
+export PATH=$PATH:$RUST_PREFIX/bin
+export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$RUST_PREFIX/lib
