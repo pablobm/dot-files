@@ -1,3 +1,9 @@
 #!/usr/bin/env sh
 
-alias ls='ls -FhG'
+ls --version | grep GNU > /dev/null
+if [[ $? ]]
+then
+  alias ls='ls -Fh --color'
+else
+  alias ls='ls -FhG'
+fi
