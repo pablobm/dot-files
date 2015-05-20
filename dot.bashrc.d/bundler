@@ -1,4 +1,17 @@
 #!/usr/bin/env sh
 alias be='bundle exec'
 alias bespec='bundle exec rspec'
-export BUNDLER_EDITOR=subl
+
+which subl
+if [ $? ]
+then
+  EDITOR=subl
+fi
+
+test -z $EDITOR && which vim
+if [ $? ]
+then
+  EDITOR=vim
+fi
+
+export BUNDLER_EDITOR=$EDITOR
