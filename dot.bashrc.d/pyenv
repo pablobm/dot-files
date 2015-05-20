@@ -1,3 +1,9 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+export PATH="$HOME/.pyenv/bin:$PATH"
+
+if which pyenv > /dev/null
+then
+  eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
+fi
