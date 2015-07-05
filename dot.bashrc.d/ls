@@ -1,7 +1,14 @@
 #!/usr/bin/env sh
 
-ls --version | grep GNU > /dev/null
-if [[ $? ]]
+if ls --color -d . >/dev/null 2>&1; then
+  GNU_LS=1
+elif ls -G -d . >/dev/null 2>&1; then
+  BSD_LS=1
+else
+  SOLARIS_LS=1
+fi
+
+if [[ $GNU_LS ]]
 then
   alias ls='ls -Fh --color'
 else
