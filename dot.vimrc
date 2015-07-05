@@ -47,7 +47,7 @@ set laststatus=2   " Always show the statusline
 " CtrlP
 "
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](\.(git|hg|svn)|node_modules)$',
+  \ 'dir':  '\v[\/](\.(git|hg|svn)|node_modules|bower_components)$',
   \ 'file': '\v\.(exe|so|dll)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
