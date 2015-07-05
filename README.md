@@ -14,3 +14,6 @@ Then start vim and run `:PluginInstall`. Exit, re-enter and it should not compla
 
 Link this `Sublime Text 3/Packages/Users` from your `/Users/pablobm/Library/Application Support/Sublime Text 3/Packages`.
 
+# License
+
+Public domain, as described on LICENSE.txt.
