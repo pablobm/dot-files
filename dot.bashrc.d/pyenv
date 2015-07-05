@@ -2,8 +2,17 @@
 
 export PATH="$HOME/.pyenv/bin:$PATH"
 
-if which pyenv > /dev/null
-then
+if which pyenv > /dev/null; then
+  PYENV=1
+fi
+
+if [[ $PYENV ]]; then
   eval "$(pyenv init -)"
+  if pyenv commands | grep virtualenv >/dev/null 2>&1; then
+    PYENV_VIRTUALENV=1
+  fi
+fi
+
+if [[ $PYENV_VIRTUALENV ]]; then
   eval "$(pyenv virtualenv-init -)"
 fi
