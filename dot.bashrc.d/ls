@@ -10,7 +10,7 @@ fi
 
 if [[ $GNU_LS ]]
 then
-  alias ls='ls -Fh --color'
+  alias ll='ls -Fh --color'
 else
-  alias ls='ls -FhG'
+  alias ll='ls -FhG'
 fi
