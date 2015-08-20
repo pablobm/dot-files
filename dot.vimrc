@@ -155,3 +155,7 @@ set diffopt=filler,vertical
 
 " MacVim
 set guifont=Inconsolata\ for\ Powerline:h16
+
+" No annoying backup/swap files all over the place
+set backupdir=~/.vim/backup/
+set directory=~/.vim/swp/
