@@ -1,5 +1,0 @@
-#!/usr/bin/env sh
-
-MODULES_DIR=$HOME/.node_modules
-npm config set prefix $MODULES_DIR
-export PATH=$MODULES_DIR/bin:$PATH
