@@ -28,3 +28,7 @@ tmp
 coverage
 --ignore-dir
 public/assets
+--ignore-dir
+bower_components
+--ignore-dir
+node_modules
