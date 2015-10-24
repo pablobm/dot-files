@@ -3,5 +3,10 @@
 RUST_PREFIX=$HOME/.rust
 if [[ -s $RUST_PREFIX ]]; then
   export PATH=$PATH:$RUST_PREFIX/bin
+
+  # MacOS
   export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$RUST_PREFIX/lib
+
+  # Linux
+  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$RUST_PREFIX/lib
 fi
