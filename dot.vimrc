@@ -144,9 +144,6 @@ set smartcase
 " gitx shortcut
 :nmap <Leader>gx :!gitx<CR><CR>
 
-" Autocomplete with TAB (tab with Shift+TAB)
-:imap <Tab> <C-n>
-
 " Treat JST templates as HTML
 au BufNewFile,BufRead *.jst* set filetype=html
 
