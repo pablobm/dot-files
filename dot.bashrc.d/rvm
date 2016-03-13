@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
-if [[ -s "$HOME/.rvm" ]]; then
+RVM_FUNC="$HOME/.rvm/scripts/rvm"
+if [[ -s "$RVM_FUNC" ]]; then
   export PATH="$PATH:$HOME/.rvm/bin"
   rvm rvmrc warning ignore allGemfiles
 fi
