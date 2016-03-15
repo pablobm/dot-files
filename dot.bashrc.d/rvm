@@ -2,6 +2,7 @@
 
 RVM_FUNC="$HOME/.rvm/scripts/rvm"
 if [[ -s "$RVM_FUNC" ]]; then
+  . "$RVM_FUNC"
   export PATH="$PATH:$HOME/.rvm/bin"
   rvm rvmrc warning ignore allGemfiles
 fi
