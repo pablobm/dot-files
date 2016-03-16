@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-export EDITOR=mvim
+export EDITOR=nvim
