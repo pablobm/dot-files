@@ -5,4 +5,5 @@ NVM_SH=$(brew --prefix nvm)/nvm.sh
 if [ -s "$NVM_SH" ]; then
   export NVM_DIR
   . "$NVM_SH"
+  export PATH=$PATH:$HOME/.node_modules/bin
 fi
