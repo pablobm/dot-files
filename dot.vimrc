@@ -18,7 +18,6 @@ Plugin 'nanotech/jellybeans.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Lokaltog/vim-powerline'
-Plugin 'pablobm/ack.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'scrooloose/nerdtree'
 Plugin 'godlygeek/tabular' " Required by tpope/vim-markdown
@@ -33,6 +32,7 @@ Plugin 'thoughtbot/vim-rspec'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'wting/rust.vim'
 Plugin 'vim-scripts/spacehi.vim'
+Plugin 'rking/ag.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -52,11 +52,6 @@ let g:ctrlp_custom_ignore = {
   \ 'link': 'some_bad_symbolic_links',
   \ }
 " Additionally, it will also ignore files listed in `wildignore`
-
-"
-" ack.vim
-"
-let g:ackargs="-H --nocolor --column --ignore-dir=node_modules"
 
 "
 " vim-coffee-script
