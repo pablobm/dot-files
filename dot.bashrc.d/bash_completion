@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+BC_DIR=$(brew --prefix bash-completion)  
+if [ -f "$BC_DIR"/etc/bash_completion ]; then
+  . "$BC_DIR"/etc/bash_completion
+fi
