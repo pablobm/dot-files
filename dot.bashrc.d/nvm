@@ -6,7 +6,6 @@ if [ $(which brew) ]; then
 else
   NVM_SH="$NVM_DIR/nvm.sh"
 fi
-echo out
 if "$NVM_SH"; then
   export NVM_DIR
   . "$NVM_SH"
