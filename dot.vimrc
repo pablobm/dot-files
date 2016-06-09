@@ -33,6 +33,7 @@ Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'wting/rust.vim'
 Plugin 'vim-scripts/spacehi.vim'
 Plugin 'rking/ag.vim'
+Plugin 'elixir-lang/vim-elixir'
 
 call vundle#end()
 filetype plugin indent on
