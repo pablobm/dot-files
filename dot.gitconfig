@@ -21,3 +21,6 @@
 
 [alias]
   co = checkout
+
+[diff]
+  compactionheuristic = true
