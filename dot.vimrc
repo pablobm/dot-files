@@ -34,6 +34,7 @@ Plugin 'wting/rust.vim'
 Plugin 'vim-scripts/spacehi.vim'
 Plugin 'rking/ag.vim'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'elmcast/elm-vim'
 
 call vundle#end()
 filetype plugin indent on
