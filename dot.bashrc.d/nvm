@@ -6,7 +6,7 @@ if [ $(which brew) ]; then
 else
   NVM_SH="$NVM_DIR/nvm.sh"
 fi
-if "$NVM_SH"; then
+if [ -f "$NVM_SH" ]; then
   export NVM_DIR
   . "$NVM_SH"
   export PATH=$PATH:$HOME/.node_modules/bin
