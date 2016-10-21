@@ -54,21 +54,10 @@ let g:ctrlp_custom_ignore = {
 " Additionally, it will also ignore files listed in `wildignore`
 
 "
-" vim-coffee-script
-"
-" On a Mac: Alt+Shift+D
-:nmap Î :CoffeeCompile<CR>
-
-"
 " NERDTree
 "
 :nmap <Leader>t :NERDTreeToggle<CR>
 :nmap <Leader>T :NERDTreeFind<CR>
-
-"
-" fugitive.vim
-"
-:nmap <Leader>gs :Gstatus<CR>
 
 "
 " NERDCommenter
@@ -135,9 +124,6 @@ set smartcase
 "/Copyright      " Case sensitive
 "/copyright\C    " Case sensitive
 "/Copyright\c    " Case insensitive
-
-" gitx shortcut
-:nmap <Leader>gx :!gitx<CR><CR>
 
 " Treat JST templates as HTML
 au BufNewFile,BufRead *.jst* set filetype=html
