@@ -20,8 +20,6 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'scrooloose/nerdtree'
-Plugin 'godlygeek/tabular' " Required by tpope/vim-markdown
-Plugin 'tpope/vim-markdown'
 Plugin 'suan/vim-instant-markdown'
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-rails'
@@ -153,3 +151,8 @@ set guifont=Inconsolata\ for\ Powerline:h14
 " No annoying backup/swap files all over the place
 set backupdir=~/.vim/backup/
 set directory=~/.vim/swp/
+
+" Markdown settings (builtin)
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown " *.md is Markdown, not Modula
+let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
+
