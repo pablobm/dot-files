@@ -1,2 +1,3 @@
 #!/usr/bin/env sh
 export EDITOR=nvim
+export BUNDLER_EDITOR=nvim
