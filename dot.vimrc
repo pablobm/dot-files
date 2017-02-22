@@ -2,11 +2,6 @@ set nocompatible
 set encoding=utf-8
 
 "
-" Things that need to come before
-"
-let g:instant_markdown_slow = 1
-
-"
 " Configuration for Vundle
 "
 filetype off
@@ -18,15 +13,12 @@ Plugin 'nanotech/jellybeans.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Lokaltog/vim-powerline'
-Plugin 'kchmck/vim-coffee-script'
 Plugin 'scrooloose/nerdtree'
-Plugin 'suan/vim-instant-markdown'
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-rails'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'juvenn/mustache.vim'
-Plugin 'thoughtbot/vim-rspec'
+Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'wting/rust.vim'
 Plugin 'vim-scripts/spacehi.vim'
@@ -63,15 +55,6 @@ let g:ctrlp_custom_ignore = {
 " NERDCommenter
 "
 map <leader>/ <plug>NERDCommenterToggle<CR>
-
-"
-" RSpec.vim
-"
-
-map <Leader>r :call RunCurrentSpecFile()<CR>
-map <Leader>R :call RunNearestSpec()<CR>
-"map <Leader>l :call RunLastSpec()<CR>
-"map <Leader>a :call RunAllSpecs()<CR>
 
 "
 " Syntastic
