@@ -62,6 +62,7 @@ map <leader>/ <plug>NERDCommenterToggle<CR>
 
 " AngularJS, Mozilla Building Blocks, Mozilla Brick
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-", "proprietary attribute", "<x-", "</x-"]
+let g:syntastic_html_tidy_blocklevel_tags=["svg path rect polygon"]
 
 
 
