@@ -1,9 +1,8 @@
 #!/usr/bin/env sh
 
-BC_DIR=
-if [ $(which brew) ]; then
-  BC_DIR=$(brew --prefix bash-completion)
+if [ -z "$BASH_COMPLETION_PREFIX" ]; then
+  BASH_COMPLETION_PREFIX=
 fi
-if [ -f "$BC_DIR"/etc/bash_completion ]; then
-  . "$BC_DIR"/etc/bash_completion
+if [ -f "$BASH_COMPLETION_PREFIX"/etc/bash_completion ]; then
+  . "$BASH_COMPLETION_PREFIX"/etc/bash_completion
 fi

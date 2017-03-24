@@ -2,14 +2,14 @@
 alias be='bundle exec'
 alias bespec='bundle exec rspec'
 
-which subl
-if [ $? ]
+SUBL_PATH="$(which subl)"
+if [ -f "$SUBL_PATH" ]
 then
   EDITOR=subl
 fi
 
-test -z $EDITOR && which vim
-if [ $? ]
+VIM_PATH="$(which vim)"
+if [ -z $EDITOR ] && [ -f "$VIM_PATH" ]
 then
   EDITOR=vim
 fi

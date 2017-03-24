@@ -1,14 +1,12 @@
 #!/usr/bin/env sh
 
-NVM_DIR="$HOME/.nvm"
-if [ "$(which brew)" ]; then
-  NVM_SH="$(brew --prefix nvm)/nvm.sh"
-else
-  NVM_SH="$NVM_DIR/nvm.sh"
+if [ -z "$NVM_PREFIX" ]; then
+  NVM_PREFIX="$HOME/.nvm"
 fi
+
+NVM_SH="$NVM_PREFIX/nvm.sh"
 if [ -f "$NVM_SH" ]; then
-  mkdir -p "$NVM_DIR"
-  export NVM_DIR
+  export NVM_DIR="$NVM_PREFIX"
   . "$NVM_SH"
   export PATH=$PATH:$HOME/.node_modules/bin
 fi

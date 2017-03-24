@@ -1,5 +1,14 @@
 # My dot files
 
+Prepare first:
+
+    $ dotfiles prepare
+
+That will precalculate some envvars and store them as `dot.bashrc.d/00_vars`
+so that we won't have to do it on every new session. These are envvars
+that are a bit slow to calculate, mainly because they result from `brew --prefix $PROGRAM`
+which is not fast to run.
+
 ## Vim
 
 Using git submodules for Vundle. After linking `.vim/` and `.vimrc` Do:
