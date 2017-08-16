@@ -1,6 +1,7 @@
 set nocompatible
 set encoding=utf-8
 
+
 "
 " Package management
 " https://github.com/k-takata/minpac
@@ -9,22 +10,26 @@ packadd minpac
 call minpac#init()
 call minpac#add('k-takata/minpac', {'type': 'opt'})
 
-call minpac#add('nanotech/jellybeans.vim')
-call minpac#add('kien/ctrlp.vim')
-call minpac#add('tpope/vim-fugitive')
-call minpac#add('Lokaltog/vim-powerline')
-call minpac#add('scrooloose/nerdtree')
-call minpac#add('tpope/vim-bundler')
-call minpac#add('tpope/vim-rails')
-call minpac#add('scrooloose/syntastic')
-call minpac#add('scrooloose/nerdcommenter')
-call minpac#add('mustache/vim-mustache-handlebars')
 call minpac#add('cakebaker/scss-syntax.vim')
-call minpac#add('wting/rust.vim')
-call minpac#add('vim-scripts/spacehi.vim')
-call minpac#add('rking/ag.vim')
 call minpac#add('elixir-lang/vim-elixir')
 call minpac#add('elmcast/elm-vim')
+call minpac#add('kien/ctrlp.vim')
+call minpac#add('mustache/vim-mustache-handlebars')
+call minpac#add('nanotech/jellybeans.vim')
+call minpac#add('rking/ag.vim')
+call minpac#add('scrooloose/nerdcommenter')
+call minpac#add('scrooloose/nerdtree')
+call minpac#add('scrooloose/syntastic')
+call minpac#add('tpope/vim-bundler')
+call minpac#add('tpope/vim-fugitive')
+call minpac#add('tpope/vim-rails')
+call minpac#add('tpope/vim-sensible')
+call minpac#add('vim-scripts/spacehi.vim')
+call minpac#add('wting/rust.vim')
+
+" Must go last
+call minpac#add('Lokaltog/vim-powerline') " After Fugitive
+
 
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
