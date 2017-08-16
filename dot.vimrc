@@ -2,32 +2,32 @@ set nocompatible
 set encoding=utf-8
 
 "
-" Configuration for Vundle
+" Package management
+" https://github.com/k-takata/minpac
 "
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim/
-call vundle#begin()
-Plugin 'gmarik/Vundle.vim'
+packadd minpac
+call minpac#init()
+call minpac#add('k-takata/minpac', {'type': 'opt'})
 
-Plugin 'nanotech/jellybeans.vim'
-Plugin 'kien/ctrlp.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'Lokaltog/vim-powerline'
-Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-bundler'
-Plugin 'tpope/vim-rails'
-Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'mustache/vim-mustache-handlebars'
-Plugin 'cakebaker/scss-syntax.vim'
-Plugin 'wting/rust.vim'
-Plugin 'vim-scripts/spacehi.vim'
-Plugin 'rking/ag.vim'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'elmcast/elm-vim'
+call minpac#add('nanotech/jellybeans.vim')
+call minpac#add('kien/ctrlp.vim')
+call minpac#add('tpope/vim-fugitive')
+call minpac#add('Lokaltog/vim-powerline')
+call minpac#add('scrooloose/nerdtree')
+call minpac#add('tpope/vim-bundler')
+call minpac#add('tpope/vim-rails')
+call minpac#add('scrooloose/syntastic')
+call minpac#add('scrooloose/nerdcommenter')
+call minpac#add('mustache/vim-mustache-handlebars')
+call minpac#add('cakebaker/scss-syntax.vim')
+call minpac#add('wting/rust.vim')
+call minpac#add('vim-scripts/spacehi.vim')
+call minpac#add('rking/ag.vim')
+call minpac#add('elixir-lang/vim-elixir')
+call minpac#add('elmcast/elm-vim')
 
-call vundle#end()
-filetype plugin indent on
+command! PackUpdate call minpac#update()
+command! PackClean call minpac#clean()
 
 
 "
