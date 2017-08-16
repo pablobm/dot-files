@@ -24,21 +24,19 @@ call minpac#add('tpope/vim-bundler')
 call minpac#add('tpope/vim-fugitive')
 call minpac#add('tpope/vim-rails')
 call minpac#add('tpope/vim-sensible')
+call minpac#add('vim-airline/vim-airline')
+call minpac#add('vim-airline/vim-airline-themes')
 call minpac#add('vim-scripts/spacehi.vim')
 call minpac#add('wting/rust.vim')
-
-" Must go last
-call minpac#add('Lokaltog/vim-powerline') " After Fugitive
-
 
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
 
 
 "
-" Powerline
+" Airline
 "
-set laststatus=2   " Always show the statusline
+let g:airline_theme='jellybeans'
 
 "
 " CtrlP
