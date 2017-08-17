@@ -1,0 +1,3 @@
+[submodule "dot.vim/pack/minpac/opt/minpac"]
+	path = dot.vim/pack/minpac/opt/minpac
+	url = https://github.com/k-takata/minpac
