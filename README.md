@@ -11,12 +11,16 @@ which is not fast to run.
 
 ## Vim
 
-Using git submodules for Vundle. After linking `.vim/` and `.vimrc` Do:
+For neovim-remote:
+
+    $ pip3 install --upgrade neovim-remote
+
+Using git submodules for packages. After linking `.vim/` and `.vimrc` Do:
 
     $ git submodule init
     $ git submodule update
 
-Then start vim and run `:PluginInstall`. Exit, re-enter and it should not complain about the color scheme or anything else anymore.
+Then start vim and run `:PackUpdate`. Exit, re-enter and it should not complain about the color scheme or anything else anymore.
 
 
 ## Sublime Text 3
