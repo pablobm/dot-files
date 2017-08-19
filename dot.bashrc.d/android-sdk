@@ -1,3 +1,0 @@
-#!/usr/bin/env sh
-
-export PATH=$PATH:$HOME/Applications/android-sdk-macosx/tools
