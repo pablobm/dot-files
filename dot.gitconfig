@@ -4,7 +4,6 @@
 
 [core]
   pager = cat
-  editor = vim
   excludesfile = ~/.git.global_ignores
   trustctime = false # See http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/
 
