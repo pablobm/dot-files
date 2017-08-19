@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-export PATH="$HOME/.pyenv/bin:$PATH"
-
 if which pyenv > /dev/null; then
   PYENV=1
 fi
