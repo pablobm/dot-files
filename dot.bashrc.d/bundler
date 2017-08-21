@@ -1,17 +1,3 @@
 #!/usr/bin/env sh
 alias be='bundle exec'
 alias bespec='bundle exec rspec'
-
-SUBL_PATH="$(which subl)"
-if [ -f "$SUBL_PATH" ]
-then
-  EDITOR=subl
-fi
-
-VIM_PATH="$(which vim)"
-if [ -z $EDITOR ] && [ -f "$VIM_PATH" ]
-then
-  EDITOR=vim
-fi
-
-export BUNDLER_EDITOR=$EDITOR
