@@ -127,6 +127,9 @@ set diffopt=filler,vertical
 " MacVim
 set guifont=Inconsolata\ for\ Powerline:h14
 
+" NeoVim :terminal
+:tnoremap <Esc> <C-\><C-n>
+
 " No annoying backup/swap files all over the place
 set backupdir=~/.vim/backup/
 set directory=~/.vim/swp/
