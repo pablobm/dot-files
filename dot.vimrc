@@ -10,10 +10,13 @@ packadd minpac
 call minpac#init()
 call minpac#add('k-takata/minpac', {'type': 'opt'})
 
+call minpac#add('Quramy/tsuquyomi')
 call minpac#add('cakebaker/scss-syntax.vim')
 call minpac#add('elixir-lang/vim-elixir')
 call minpac#add('elmcast/elm-vim')
+call minpac#add('isRuslan/vim-es6')
 call minpac#add('kien/ctrlp.vim')
+call minpac#add('leafgarland/typescript-vim')
 call minpac#add('mustache/vim-mustache-handlebars')
 call minpac#add('nanotech/jellybeans.vim')
 call minpac#add('rking/ag.vim')
