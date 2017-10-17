@@ -72,9 +72,17 @@ map <leader>/ <plug>NERDCommenterToggle<CR>
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-", "proprietary attribute", "<x-", "</x-", "plain text isn't allowed in <head> elements"]
 let g:syntastic_html_tidy_blocklevel_tags=["svg path rect polygon"]
 
-" Recommended by elmcast/elm-vim
+" Recommended by Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Recommended by elmcast/elm-vim
 let g:elm_syntastic_show_warnings = 1
 
 
