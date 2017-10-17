@@ -149,3 +149,6 @@ set directory=~/.vim/swp/
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown " *.md is Markdown, not Modula
 let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'ruby', 'javascript']
 
+" Terminal
+autocmd TermOpen * setlocal scrollback=100000
+
