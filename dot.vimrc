@@ -22,7 +22,7 @@ call minpac#add('nanotech/jellybeans.vim')
 call minpac#add('rking/ag.vim')
 call minpac#add('scrooloose/nerdcommenter')
 call minpac#add('scrooloose/nerdtree')
-call minpac#add('scrooloose/syntastic')
+call minpac#add('w0rp/ale')
 call minpac#add('tpope/vim-bundler')
 call minpac#add('tpope/vim-fugitive')
 call minpac#add('tpope/vim-rails')
@@ -40,6 +40,16 @@ command! PackClean call minpac#clean()
 " Airline
 "
 let g:airline_theme='jellybeans'
+
+"
+" Ale
+"
+let g:ale_lint_on_text_changed='never'
+let g:ale_lint_on_text_changed=1
+let g:ale_fixers = {
+\   'javascript': ['eslint'],
+\   'python': ['autopep8'],
+\}
 
 "
 " CtrlP
@@ -63,30 +73,6 @@ let g:ctrlp_custom_ignore = {
 " NERDCommenter
 "
 map <leader>/ <plug>NERDCommenterToggle<CR>
-
-"
-" Syntastic
-"
-
-" AngularJS, Mozilla Building Blocks, Mozilla Brick
-"let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-", "proprietary attribute", "<x-", "</x-", "plain text isn't allowed in <head> elements"]
-"let g:syntastic_html_tidy_blocklevel_tags=["svg path rect polygon"]
-let g:syntastic_html_checkers=['']
-let g:syntastic_mode_map = { 'passive_filetypes': ['scss'] }
-
-" Recommended by Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-" Recommended by elmcast/elm-vim
-let g:elm_syntastic_show_warnings = 1
-
 
 "
 " Misc
