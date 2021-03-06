@@ -33,7 +33,7 @@ call minpac#add('vim-scripts/spacehi.vim')
 call minpac#add('wting/rust.vim')
 
 call minpac#add('kassio/neoterm')
-call minpac#add('janko-m/vim-test')
+call minpac#add('vim-test/vim-test')
 
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
