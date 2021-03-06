@@ -55,6 +55,7 @@ let g:ale_fixers = {
 \   'elixir': ['mix_format'],
 \}
 let g:ale_fix_on_save=1
+autocmd FileType html.handlebars setlocal noeol binary fileformats="mac,unix,dos"
 
 "
 " CtrlP
