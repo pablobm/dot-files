@@ -48,19 +48,19 @@ let g:airline_theme='dracula'
 " Ale
 "
 let g:ale_linters = {
-\   'javascript': ['eslint'],
-\   'html': ['prettier'],
 \   'css': ['prettier'],
 \   'go': ['golint'],
+\   'html': ['prettier'],
+\   'javascript': ['eslint'],
 \   'ruby': ['standardrb'],
 \}
 let g:ale_fixers = {
+\   'css': ['prettier'],
+\   'elixir': ['mix_format'],
+\   'go': ['gofmt'],
+\   'html': ['prettier'],
 \   'javascript': ['eslint'],
 \   'python': ['autopep8'],
-\   'elixir': ['mix_format'],
-\   'html': ['prettier'],
-\   'css': ['prettier'],
-\   'go': ['gofmt'],
 \   'ruby': ['standardrb'],
 \}
 let g:ale_lint_on_text_changed='never'
