@@ -47,14 +47,13 @@ let g:airline_theme='dracula'
 "
 " Ale
 "
-let g:ale_lint_on_text_changed='never'
-let g:ale_lint_on_text_changed=1
 let g:ale_fixers = {
 \   'javascript': ['eslint'],
 \   'python': ['autopep8'],
 \   'elixir': ['mix_format'],
 \}
-let g:ale_fix_on_save=1
+let g:ale_lint_on_text_changed='never'
+command! Fix ALEFix
 autocmd FileType html.handlebars setlocal noeol binary fileformats="mac,unix,dos"
 
 "
