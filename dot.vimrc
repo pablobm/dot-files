@@ -47,10 +47,21 @@ let g:airline_theme='dracula'
 "
 " Ale
 "
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\   'html': ['prettier'],
+\   'css': ['prettier'],
+\   'go': ['golint'],
+\   'ruby': ['standardrb'],
+\}
 let g:ale_fixers = {
 \   'javascript': ['eslint'],
 \   'python': ['autopep8'],
 \   'elixir': ['mix_format'],
+\   'html': ['prettier'],
+\   'css': ['prettier'],
+\   'go': ['gofmt'],
+\   'ruby': ['standardrb'],
 \}
 let g:ale_lint_on_text_changed='never'
 command! Fix ALEFix
@@ -87,6 +98,7 @@ nnoremap <silent> <Leader><Leader> :TestLast<cr>
 "
 :nmap <Leader>t :NERDTreeToggle<CR>
 :nmap <Leader>T :NERDTreeFind<CR>
+let NERDTreeIgnore = ['^coverage_']
 
 "
 " NERDCommenter
